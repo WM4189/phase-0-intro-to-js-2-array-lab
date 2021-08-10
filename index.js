@@ -1,3 +1,40 @@
+const cats = ["Milo", "Otis", "Garfield"];
+
+const destructivelyAppendCat = name => cats.push(name)
+
+const destructivelyPrependCat = name => cats.unshift(name)
+
+const destructivelyRemoveLastCat = () => cats.pop()
+
+const destructivelyRemoveFirstCat = () => cats.shift()
+
+const appendCat = name => {
+    const newArray = [...cats, name]
+    return newArray
+}
+
+const prependCat = name => {
+    const newArray = [...cats]
+    newArray.unshift(name)
+    return newArray
+}
+
+const removeLastCat = () => {
+    const newArray = [...cats]
+    newArray.pop()
+    return newArray
+}
+
+const removeFirstCat = () => {
+    const newArray = [...cats]
+    newArray.shift()
+    return newArray
+}
+
+
+
+//// and again ////
+
 // const cats = ["Milo", "Otis", "Garfield"];
 
 // function destructivelyAppendCat(name) {
@@ -48,50 +85,53 @@
 
 // do it again //
 
-let cats = ["Milo", "Otis", "Garfield"];
+// let cats = ["Milo", "Otis", "Garfield"];
 
-function destructivelyAppendCat(name) {
-    cats.push(name);
-}
-destructivelyAppendCat(newCat);
+// function destructivelyAppendCat(name) {
+//     cats.push(name);
+// }
+// destructivelyAppendCat(newCat);
 
-function destructivelyPrependCat(name) {
-    cats.unshift(name);
-}
-destructivelyPrependCat(newNewCat);
+// function destructivelyPrependCat(name) {
+//     cats.unshift(name);
+// }
+// destructivelyPrependCat(newNewCat);
 
-function destructivelyRemoveLastCat() {
-    cats.pop();
-}
-destructivelyRemoveLastCat();
+// function destructivelyRemoveLastCat() {
+//     cats.pop();
+// }
+// destructivelyRemoveLastCat();
 
-function destructivelyRemoveFirstCat() {
-    cats.shift();
-}
-destructivelyRemoveFirstCat();
+// function destructivelyRemoveFirstCat() {
+//     cats.shift();
+// }
+// destructivelyRemoveFirstCat();
 
-function appendCat(name) {
-    let newArray = [...cats];
-    newArray.push(name);
-    return newArray;
-}
-appendCat(newCat);
+// function appendCat(name) {
+//     let newArray = [...cats];
+//     newArray.push(name);
+//     return newArray;
+// }
+// appendCat(newCat);
 
-function prependCat(name) {
-    let newArray = [...cats];
-    newArray.unshift(name);
-    return newArray;
-}
-prependCat(newCat);
+// function prependCat(name) {
+//     let newArray = [...cats];
+//     newArray.unshift(name);
+//     return newArray;
+// }
+// prependCat(newCat);
 
-function removeLastCat() {
-    let newArray = [...cats];
-    newArray.pop();
-    return newArray;
-}
+// function removeLastCat() {
+//     let newArray = [...cats];
+//     newArray.pop();
+//     return newArray;
+// }
 
-function removeFirstCat() {
-    let newArray = [...cats];
-    newArray.shift();
-    return newArray;
-}
+// function removeFirstCat() {
+//     let newArray = [...cats];
+//     newArray.shift();
+//     return newArray;
+// }
+
+
+
